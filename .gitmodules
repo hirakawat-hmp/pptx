@@ -1,0 +1,9 @@
+[submodule "reference/PptxGenJS"]
+	path = reference/PptxGenJS
+	url = https://github.com/gitbrent/PptxGenJS.git
+[submodule "reference/python-pptx"]
+	path = reference/python-pptx
+	url = https://github.com/scanny/python-pptx.git
+[submodule "reference/pptx-automizer"]
+	path = reference/pptx-automizer
+	url = https://github.com/singerla/pptx-automizer.git

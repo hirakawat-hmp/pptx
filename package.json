@@ -1,0 +1,56 @@
+{
+  "name": "@hirakawa/pptx",
+  "version": "0.1.0",
+  "description": "A TypeScript library for creating and manipulating PowerPoint (PPTX) files",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src test",
+    "lint:fix": "eslint src test --fix",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\" \"test/**/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "pptx",
+    "powerpoint",
+    "office",
+    "ooxml",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.38.0",
+    "@types/eslint__js": "^8.42.3",
+    "@vitest/coverage-v8": "^4.0.5",
+    "@vitest/ui": "^4.0.5",
+    "eslint": "^9.38.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.6.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.2",
+    "vitest": "^4.0.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
